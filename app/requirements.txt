@@ -1,0 +1,7 @@
+transformers
+sentencepiece
+uvicorn
+fastapi[standard]
+pydantic
+python-dotenv
+pytest
