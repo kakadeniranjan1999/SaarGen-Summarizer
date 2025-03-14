@@ -56,7 +56,7 @@ pytest test/test_main.py
 
 Detailed documentation of SaarGen Summarizer ca be accessed at [http://0.0.0.0:5001/docs](http://0.0.0.0:5001/docs). The code snippet for each API is described below.
 
-## 1. Query Description - Responds with a simple acknowledgement (SaarGen's description).
+### 1. Query Description - Responds with a simple acknowledgement (SaarGen's description).
 
 ### Request
 
@@ -81,7 +81,7 @@ print(response.text)
     "description": "Hello! I am SaarGen! Your AI summary generator. My name is a combination of Sanskrit word Saaransh (meaning Summary in English) and Generator!"
     }
 
-## 2. Summarize Text - Receives text input and returns summarized content generated using an AI model.
+### 2. Summarize Text - Receives text input and returns summarized content generated using an AI model.
 
 ### Request
 
