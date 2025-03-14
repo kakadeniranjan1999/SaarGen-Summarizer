@@ -1,0 +1,8 @@
+services:
+  saar-gen:
+    build:
+      context: .
+    ports:
+      - 5001:5001
+    volumes:
+      - .:/app
