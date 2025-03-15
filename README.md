@@ -111,6 +111,10 @@ print(response.text)
     "summary": "President Obama has signed into law one of the biggest tax cuts in history."
     }
 
+## Scope for Improvement
+
+```Due to the issues faced while sending kwargs to Inference API, handling summarization length is not implemented.```
+
 ## Contact
 
 ```Niranjan Kakade - niranjankakade06@gmail.com```
