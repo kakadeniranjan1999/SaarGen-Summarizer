@@ -29,6 +29,7 @@ A simple app for AI summary generation
 2. Clone the repository
 ```zsh
 git clone https://github.com/kakadeniranjan1999/SaarGen-Summarizer.git
+cd SaarGen-Summarizer/app
 ```
 
 3. Edit .env file
