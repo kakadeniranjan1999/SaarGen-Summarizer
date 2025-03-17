@@ -1,7 +1,9 @@
-from huggingface_hub import AsyncInferenceClient, InferenceClient
+from huggingface_hub import InferenceClient
 import os
+from dotenv import load_dotenv
 
 
+load_dotenv()
 HF_API_KEY = os.getenv("HF_API_KEY")
 INFERENCE_PROVIDER = os.getenv("INFERENCE_PROVIDER")
 MODEL_NAME = os.getenv("MODEL_NAME")

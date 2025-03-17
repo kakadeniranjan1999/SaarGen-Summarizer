@@ -1,7 +1,5 @@
-import logging
 import os
 import uvicorn
-from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from requests.exceptions import ConnectionError, ReadTimeout
 from huggingface_hub.errors import HTTPError, InferenceTimeoutError
@@ -14,7 +12,6 @@ from core.logger import get_logger
 
 logger = get_logger(uvicorn.config.logger)
 
-load_dotenv()
 PORT = int(os.getenv("PORT"))
 
 

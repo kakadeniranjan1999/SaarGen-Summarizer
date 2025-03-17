@@ -9,8 +9,8 @@ def test_query():
     response = client.get("/query")
     assert response.status_code == 200
     assert response.json() == {
-        "description": "Hello! I am SaarGen! Your summary AI generator. My name is a combination of Sanskrit word "
-                       "Saaransh (meaning Summary in English) and Generator!"
+        "description": "Hello! I am SaarGen! Your AI summary generator. My name is a combination of Sanskrit word "
+                       "Saaransh (meaning Summary in English) and Generator!",
     }
 
 def test_summarize():
