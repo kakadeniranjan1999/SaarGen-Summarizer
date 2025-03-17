@@ -49,7 +49,7 @@ docker compose stop
 
 ## Testing
 ```zsh
-pytest test/test_main.py
+python -m pytest test/test_main.py
 ```
 
 ## API Documentation
