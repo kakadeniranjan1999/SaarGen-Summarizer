@@ -9,12 +9,10 @@ from fastapi.exceptions import ResponseValidationError, RequestValidationError
 
 from schemas.schemas import SummarizerQuery, SummarizerResponse, SaarGenQuery
 from core.inference import SaarGenSummarizer
+from core.logger import get_logger
 
 
-logger = uvicorn.config.logger
-fileHandler = logging.FileHandler("app.log")
-logger.addHandler(fileHandler)
-
+logger = get_logger(uvicorn.config.logger)
 
 load_dotenv()
 PORT = int(os.getenv("PORT"))
@@ -36,7 +34,7 @@ async def validation_exception_handler(request, error):
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request, error):
-    logger.error(f"ResponseValidationError ---> {request} ---> {error}")
+    logger.error(f"RequestValidationError ---> {request} ---> {error}")
     raise HTTPException(status_code=400, detail=f"{error.__class__.__name__}: {error.__str__()}")
 
 @app.get("/query", response_model=SaarGenQuery, response_description="SaarGen's Description")
